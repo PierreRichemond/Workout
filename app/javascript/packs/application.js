@@ -3,6 +3,7 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 //= require jquery
+//= require jquery-ui/datepicker
 
 
 import Rails from "@rails/ujs";
@@ -12,5 +13,5 @@ import "channels";
 import "bootstrap";
 
 Rails.start()
-Turbolinks.start()
+// Turbolinks.start()
 ActiveStorage.start()
