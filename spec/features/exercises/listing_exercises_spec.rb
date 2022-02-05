@@ -29,7 +29,14 @@ RSpec.feature 'listing exercises' do
     # expect(page).to have_content(@e3.duration_in_min)
     # expect(page).to have_content(@e3.workout)
     # expect(page).to have_content(@e3.workout_date)
-
   end
 
+  scenario 'Shows no exercises if none created' do
+    @john.exercises.destroy_all
+    visit '/'
+
+    click_link 'My Lounge'
+
+    expect(page).to have_content('No Workout Yet.')
+  end
 end
