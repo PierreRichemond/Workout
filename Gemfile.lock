@@ -115,7 +115,7 @@ GEM
     cucumber-wire (6.2.1)
       cucumber-core (~> 10.1, >= 10.1.0)
       cucumber-cucumber-expressions (~> 14.0, >= 14.0.0)
-    d3-rails (7.0.0)
+    d3-rails (4.1.0)
       railties (>= 3.1)
     devise (4.8.0)
       bcrypt (~> 3.0)
@@ -307,7 +307,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   capybara
-  d3-rails
+  d3-rails (= 4.1.0)
   devise
   guard
   guard-cucumber

@@ -23,7 +23,7 @@
           <%= f.label :duration_in_min, 'Duration (min)' %>
         </div>
         <div class='col-md-10'>
-          <%= f.number_field :duration_in_min, class: 'form-control', placeholder: 'Title of exercise', autofocus: true %>
+          <%= f.number_field :duration_in_min, class: 'form-control', autofocus: true %>
         </div>
       </div>
       <div class='form-group'>
@@ -31,7 +31,7 @@
           <%= f.label :workout, 'Workout details' %>
         </div>
         <div class='col-md-10'>
-          <%= f.text_area :workout, rows: 10, class: 'form-control', placeholder: 'Body of exercise' %>
+          <%= f.text_area :workout, rows: 10, class: 'form-control'%>
         </div>
       </div>
       <div class='form-group'>
@@ -39,7 +39,7 @@
           <%= f.label :workout_date, 'Activity date' %>
         </div>
         <div class='col-md-10'>
-          <%= f.text_field :workout_date, rows: 10, class: 'form-control', placeholder: 'Body of exercise' %>
+          <%= f.date_field :workout_date, class: 'form-control'%>
         </div>
       </div>
 
