@@ -12,7 +12,7 @@ RSpec.feature 'Creating exercise' do
   scenario 'with valid input' do
     fill_in 'Duration (min)', with: 70
     fill_in 'Workout details', with: 'Weight lifting'
-    fill_in 'Activity date', with: '2022-02-15'
+    fill_in 'Activity date', with: 3.days.ago
 
     click_button 'Create Exercise'
 
