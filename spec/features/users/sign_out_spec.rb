@@ -18,6 +18,5 @@ RSpec.feature 'Signing out' do
     expect(page).to have_link('Sign up')
     expect(page).to have_content("Signed out successfully.")
     expect(page).not_to have_content("Sign out")
-
   end
 end
