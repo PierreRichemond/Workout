@@ -10,7 +10,7 @@ RSpec.feature 'Editing Exercise' do
     login_as(@owner)
   end
 
-  scenario 'Wit a valid data succeeds' do
+  scenario 'With a valid data succeeds' do
     visit '/'
     click_link 'My Lounge'
     path = "/users/#{@owner.id}/exercises/#{@owner_exercise.id}/edit"
