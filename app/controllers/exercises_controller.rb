@@ -22,6 +22,24 @@ class ExercisesController < ApplicationController
     end
   end
 
+  def edit
+    @exercise = current_user.exercises.find(params[:id])
+  end
+
+  def update
+    @exercise = current_user.exercises.find(params[:id])
+    if @exercise.update(exercise_params)
+      flash[:notice] = 'Exercise has been updated'
+      redirect_to [current_user, @exercise]
+    else
+      flash.now[:alert] = 'Exercise has not been updated'
+      render :edit
+    end
+  end
+
+  def destroy
+  end
+
   private
 
   def exercise_params

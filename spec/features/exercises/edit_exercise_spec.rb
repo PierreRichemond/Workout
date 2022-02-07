@@ -4,7 +4,7 @@ RSpec.feature 'Editing Exercise' do
   before do
     @owner = User.create!(email: 'john@example.com', password: 'password')
 
-    @owner_exercise = @john.exercises.create(duration_in_min: 48,
+    @owner_exercise = @owner.exercises.create(duration_in_min: 48,
                                   workout: 'My body building activity',
                                   workout_date: Date.today)
     login_as(@owner)
@@ -13,7 +13,7 @@ RSpec.feature 'Editing Exercise' do
   scenario 'Wit a valid data succeeds' do
     visit '/'
     click_link 'My Lounge'
-    path = "/users/#{owner.id}/exercises/#{owner_exercise.id}/edit"
+    path = "/users/#{@owner.id}/exercises/#{@owner_exercise.id}/edit"
     link = "a[href = \'#{path}\']"
     find(link).click
 
