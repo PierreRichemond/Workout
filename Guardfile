@@ -73,6 +73,7 @@ guard :rspec, cmd: "rspec" do
   watch(%r{^app/controllers/(.+)_(controller)\.rb$})  { "spec/features" }
   watch(%r{^app/views/layouts/application.html.erb$})  { "spec/features" }
   watch(%r{^app/models/(.+)\.rb$})  { "spec/features" }
+  watch(%r{^app/models/(.+)\.rb$})  { "spec" }
   watch(rails.controllers) do |m|
     [
       rspec.spec.call("routing/#{m[1]}_routing"),
