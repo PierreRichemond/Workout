@@ -5,7 +5,7 @@ $(document).jQuery(function() {
 $(document).jQuery(function () {
   $("#exercise_workout_date").datepicker({ dateFormat: 'yy-mm-dd' });
 
-  var regex = /\/users\/\d+\/exercises$/i;
+  var regex = /\/users\/\d+\/exercises$|\/friendships\/d+$/i;
   if ($(location).attr('pathname').match(regex)) {
     drawChart();
   }
