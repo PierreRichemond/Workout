@@ -1,24 +1,8 @@
-# README
+# Workout
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Website made with Udemi : https://www.udemy.com/course/ruby-rails-5-bdd-rspec-capybara
+<br>
+Feel free to use it to set up your Workout schedule.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<a href="https://workout-under-rspec.herokuapp.com/" target="_blank">Website Here</a>
+<img width="1792" alt="Screen Shot 2021-09-06 at 18 21 14" src="https://github.com/PierreRichemond/Workout/blob/master/app/assets/images/workout-1.png">
